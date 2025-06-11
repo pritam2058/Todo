@@ -9,7 +9,7 @@ def todo_list(request):
         request,
         "bootstrap/todo_list.html",
         {"todos":todos},
-    )
+     )
 
 def todo_delete(request, id):
     todo = Todo.objects.get(id=id) # selecct * from todo list where id=id:
